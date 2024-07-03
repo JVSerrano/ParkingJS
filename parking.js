@@ -41,7 +41,7 @@ function pay() {
         if (checkTrue.checked) {
             let calculateDiscount = 4 / 100 * (3)
             let finalPrice = 3 - calculateDiscount
-            alert("Pago con descuento de socio: " + finalPrice.toFixed(2))
+            alert("Pago con descuento de socio: " + finalPrice.toFixed(2) + '€')
             checkTrue.checked = false
             totalMoneyMembers += finalPrice
             moneyTotal += finalPrice
@@ -55,7 +55,7 @@ function pay() {
         if (checkTrue.checked) {
             let calculateDiscount = 4 / 100 * (6)
             let finalPrice = 6 - calculateDiscount
-            alert("Pago con descuento de socio: " + finalPrice)
+            alert("Pago con descuento de socio: " + finalPrice.toFixed(2) + '€')
             checkTrue.checked = false
             totalMoneyMembers += finalPrice
             moneyTotal += finalPrice
