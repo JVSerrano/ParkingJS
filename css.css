@@ -21,7 +21,7 @@ body{
 .img{
 display: block;
 margin: 0 auto;
-width: 50%;
+max-width: 100%;
 margin-bottom: 5%;
 }
 
@@ -64,6 +64,17 @@ button{
     justify-content:center;
 }
 
+@media (max-width: 768px) {
+    .subTable {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .subTable > div {
+        flex: 0 0 100%; 
+    }
+}
+
 .tableIn{
 margin-right: 2%;
 margin-left: 2%;
@@ -85,5 +96,6 @@ td{
 #ulClients{
     flex-direction: column;
     text-align: center;
+    margin-bottom: 50px;
 }
 
