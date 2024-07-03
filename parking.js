@@ -48,6 +48,7 @@ function pay() {
             countTotalMembers += 1
         } else {
             alert("Son 3€")
+            moneyTotal += 3
         }
 
     } else if (numRandom > 60) {
@@ -61,6 +62,7 @@ function pay() {
             countTotalMembers += 1
         } else {
             alert('Son 6€')
+            moneyTotal += 6
         }
     }
 
