@@ -41,9 +41,10 @@ function pay() {
         if (checkTrue.checked) {
             let calculateDiscount = 4 / 100 * (3)
             let finalPrice = 3 - calculateDiscount
-            alert("Pago con descuento de socio: " + finalPrice + "€") 
+            alert("Pago con descuento de socio: " + finalPrice.toFixed(2))
             checkTrue.checked = false
             totalMoneyMembers += finalPrice
+            moneyTotal += finalPrice
             countTotalMembers += 1
         } else {
             alert("Son 3€")
@@ -53,9 +54,10 @@ function pay() {
         if (checkTrue.checked) {
             let calculateDiscount = 4 / 100 * (6)
             let finalPrice = 6 - calculateDiscount
-            alert("Pago con descuento de socio: " + finalPrice + "€")
+            alert("Pago con descuento de socio: " + finalPrice)
             checkTrue.checked = false
             totalMoneyMembers += finalPrice
+            moneyTotal += finalPrice
             countTotalMembers += 1
         } else {
             alert('Son 6€')
@@ -105,31 +107,20 @@ function showList() {
 
 
 function updateMoneyTotal() {
-    moneyTotal = 0
     clientsFree = 0
-    clientsTotal = 0
+    clientsTotal = list.length
 
     let cTotal = document.getElementById('cTotal')
     let cFree = document.getElementById('cFree')
     let mTotal = document.getElementById('mTotal')
 
 
-    for (let i = 0; i < list.length; i++) {
+    mTotal.textContent = moneyTotal.toFixed(2) + '€'
 
-        if (list[i].time >= 30 && list[i].time < 60) {
-            moneyTotal += 3
-            clientsTotal += 1
-        } else if (list[i].time > 60) {
-            moneyTotal += 6
-            clientsTotal += 1
-        } else {
-            clientsFree += 1
-            clientsTotal += 1
-        }
-    }
+    clientsFree = list.filter(client => client.time < 30).length
+
     cTotal.textContent = clientsTotal
     cFree.textContent = clientsFree
-    mTotal.textContent = moneyTotal + '€'
 }
 
 
