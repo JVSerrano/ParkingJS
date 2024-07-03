@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img class='img' src="logoFutu.png" alt="logo futurama">
+
+    <div class="phrase" id="showP">
+        <p id="phraseElement">¡Estaciona tu nave espacial con estilo y seguridad en el mejor garaje del universo! Tecnología de vanguardia
+            y comodidad para tus aventuras intergalácticas. ¡Porque incluso los héroes del espacio necesitan un buen
+            lugar para aparcar!</p>
+    </div>
+
+    <br /> <br />
+
+    <div class="memberCheck">
+        <input type="checkbox" id="checkbox">
+
+        <p> <abbr style="text-decoration: none;" title="Descuento de 4% a socios">¿Eres socio?</abbr></p>
+    </div>
+
+    <br /> <br />
+
+
+    <div class="btnContainer">
+        <button id="btnPay" onclick="pay()" style=" background-color: rgb(8, 109, 8); color: aliceblue;">PAGAR</button>
+
+        <button id="btnShow" onclick="showElements()"
+            style=" background-color: rgb(8, 106, 109); color: aliceblue;">Mostrar Datos</button>
+    </div>
+
+    <br /> <br />
+
+    <div ></div>
+
+    <br /> <br />
+
+
+    <div id="table" style="display: none;">
+        <div class="subTable">
+            <div class='tableIn' id="tabClients">
+                <table>
+                    <tr>
+                        <th>Clientes totales</th>
+                        <th>Cliestes Gratis</th>
+                        <th>Ingresos</th>
+
+                    </tr>
+
+                    <tr>
+                        <td id="cTotal"></td>
+                        <td id="cFree"></td>
+                        <td id="mTotal"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br /> <br />
+
+            <div class='tableIn' id="tabAvg">
+                <table>
+                    <tr>
+                        <th>Tiempo med/cli </th>
+                        <th>Gasto med/cli </th>
+                    </tr>
+
+                    <tr>
+                        <td id="avgTc"></td>
+                        <td id="avgSc"></td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <br /> <br />
+
+            <div class='tableIn' id="tabMembers">
+                <table>
+                    <tr>
+                        <th>Numero Socios</th>
+                        <th>Gasto medio</th>
+                    </tr>
+
+                    <tr>
+                        <td id="totalMembers"></td>
+                        <td id="avgTMembers"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id="ulClients">
+            <h3>HISTORIAL</h3>
+
+            <br>
+
+            <ul id="lu"></ul>
+        </div>
+
+    </div>
+    <script src="parking.js"></script>
+</body>
+
+</html>

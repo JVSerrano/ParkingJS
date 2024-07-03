@@ -1,0 +1,89 @@
+:root{
+    --background-color: b rgb();
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    background: linear-gradient(0deg,#a6c1d6,#7ca4bd);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh ;
+}
+
+.img{
+display: block;
+margin: 0 auto;
+width: 50%;
+margin-bottom: 5%;
+}
+
+.phrase{
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 125%;
+    padding: 2%;
+    background:radial-gradient(#c8deec,#a6c1d6);
+    border-radius: 5px;
+}
+
+.memberCheck{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-right: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#showP{
+    text-align: center;
+}
+
+
+.subTable{
+    display: flex;
+    justify-content:center;
+}
+
+.tableIn{
+margin-right: 2%;
+margin-left: 2%;
+border: 1px solid black;
+border-radius: 5px;
+background-color: #add1a7;
+}
+
+th{
+    background-color:  #3d7c6c;
+    padding: 10px 8px;
+}
+
+td{
+    padding: 5%;
+    text-align: center;
+}
+
+#ulClients{
+    flex-direction: column;
+    text-align: center;
+}
+
